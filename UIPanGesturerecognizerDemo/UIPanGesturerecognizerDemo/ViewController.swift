@@ -10,16 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func pan(_ sender: UIPanGestureRecognizer) {
+        let index = sender.translation(in: view)
+        sender.view?.transform = (sender.view?.transform.translatedBy(x: index.x, y: index.y))!
+        sender.setTranslation(CGPoint.zero, in: view)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

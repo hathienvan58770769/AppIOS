@@ -13,40 +13,34 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIPanGesturerecognizerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UILongPressGestureRecognizer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img2" translatesAutoresizingMaskIntoConstraints="NO" id="yzL-Eu-6BS">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img2" translatesAutoresizingMaskIntoConstraints="NO" id="12z-Ez-FUb">
                                 <rect key="frame" x="87" y="248" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Ccc-Sk-g0c" appends="YES" id="8wx-52-eCD"/>
+                                    <outletCollection property="gestureRecognizers" destination="bgD-e2-SAQ" appends="YES" id="sIz-nR-nSd"/>
                                 </connections>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.87721027149999997" blue="0.95180859220000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <gestureRecognizers/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="ean-RV-gae" appends="YES" id="eOo-dy-mXa"/>
-                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="img" destination="12z-Ez-FUb" id="bz6-ij-y5M"/>
+                        <outlet property="longpress" destination="bgD-e2-SAQ" id="yaC-fQ-P0I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="ean-RV-gae">
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="bgD-e2-SAQ">
                     <connections>
-                        <action selector="pan:" destination="BYZ-38-t0r" id="YNv-aW-KG4"/>
+                        <action selector="long_img:" destination="BYZ-38-t0r" id="Glr-3j-IOg"/>
                     </connections>
-                </panGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="Ccc-Sk-g0c">
-                    <connections>
-                        <action selector="pan:" destination="BYZ-38-t0r" id="Ifc-ej-3iK"/>
-                    </connections>
-                </panGestureRecognizer>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-78.260869565217391" y="125.54347826086958"/>
         </scene>
