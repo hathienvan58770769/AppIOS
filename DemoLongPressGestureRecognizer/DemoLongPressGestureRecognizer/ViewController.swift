@@ -10,16 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func long(_ sender: UILongPressGestureRecognizer) {
+        if sender.state == .began {
+            let alert:UIAlertController = UIAlertController(title: "Thông báo", message: "Đây là con bọ", preferredStyle: UIAlertControllerStyle.alert)
+            let btnOk:UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.destructive, handler: nil)
+            
+            alert.addAction(btnOk)
+            
+            present(alert, animated: true, completion: nil)
+            
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+      
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
