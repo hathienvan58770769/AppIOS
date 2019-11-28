@@ -88,6 +88,7 @@
                                         <connections>
                                             <outlet property="imgView" destination="a1Y-N6-OrG" id="Tw0-LX-K13"/>
                                             <outlet property="lblTen" destination="i2s-JM-0JN" id="IVB-CD-fLu"/>
+                                            <segue destination="2RN-MT-cSP" kind="show" id="knW-cS-4lR"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -116,11 +117,11 @@
         <scene sceneID="onD-6b-Azz">
             <objects>
                 <viewController storyboardIdentifier="MH2" id="2RN-MT-cSP" customClass="View2Controller" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wDc-my-Iuc">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="wDc-my-Iuc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sFb-xY-t4c">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sFb-xY-t4c">
                                 <rect key="frame" x="87" y="248" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="sFb-xY-t4c" secondAttribute="height" multiplier="1:1" id="lGC-CM-1Ar"/>
