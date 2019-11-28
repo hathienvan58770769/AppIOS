@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2197EF43238FAD580060FB4D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2197EF42238FAD580060FB4D /* TableViewCell.swift */; };
+		2197EF45238FB2E20060FB4D /* View2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2197EF44238FB2E20060FB4D /* View2Controller.swift */; };
 		21CA1CAB238D0F51006BE1D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CA1CAA238D0F51006BE1D7 /* AppDelegate.swift */; };
 		21CA1CAD238D0F51006BE1D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CA1CAC238D0F51006BE1D7 /* ViewController.swift */; };
 		21CA1CB0238D0F51006BE1D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21CA1CAE238D0F51006BE1D7 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2197EF42238FAD580060FB4D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		2197EF44238FB2E20060FB4D /* View2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2Controller.swift; sourceTree = "<group>"; };
 		21CA1CA7238D0F51006BE1D7 /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21CA1CAA238D0F51006BE1D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21CA1CAC238D0F51006BE1D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				21CA1CB1238D0F51006BE1D7 /* Assets.xcassets */,
 				21CA1CB3238D0F51006BE1D7 /* LaunchScreen.storyboard */,
 				21CA1CB6238D0F51006BE1D7 /* Info.plist */,
+				2197EF42238FAD580060FB4D /* TableViewCell.swift */,
+				2197EF44238FB2E20060FB4D /* View2Controller.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2197EF43238FAD580060FB4D /* TableViewCell.swift in Sources */,
+				2197EF45238FB2E20060FB4D /* View2Controller.swift in Sources */,
 				21CA1CAD238D0F51006BE1D7 /* ViewController.swift in Sources */,
 				21CA1CAB238D0F51006BE1D7 /* AppDelegate.swift in Sources */,
 			);
