@@ -88,7 +88,6 @@
                                         <connections>
                                             <outlet property="imgView" destination="a1Y-N6-OrG" id="Tw0-LX-K13"/>
                                             <outlet property="lblTen" destination="i2s-JM-0JN" id="IVB-CD-fLu"/>
-                                            <segue destination="2RN-MT-cSP" kind="show" id="knW-cS-4lR"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -116,13 +115,13 @@
         <!--View2 Controller-->
         <scene sceneID="onD-6b-Azz">
             <objects>
-                <viewController storyboardIdentifier="MH2" id="2RN-MT-cSP" customClass="View2Controller" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="wDc-my-Iuc">
+                <viewController storyboardIdentifier="mh2" id="2RN-MT-cSP" customClass="View2Controller" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wDc-my-Iuc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sFb-xY-t4c">
-                                <rect key="frame" x="87" y="248" width="240" height="240"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sFb-xY-t4c">
+                                <rect key="frame" x="87" y="204" width="304" height="480"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="sFb-xY-t4c" secondAttribute="height" multiplier="1:1" id="lGC-CM-1Ar"/>
                                 </constraints>
@@ -131,11 +130,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="sFb-xY-t4c" firstAttribute="leading" secondItem="qgi-5T-NcH" secondAttribute="leading" constant="87" id="0sW-Z2-EvL"/>
+                            <constraint firstItem="sFb-xY-t4c" firstAttribute="leading" secondItem="qgi-5T-NcH" secondAttribute="leading" constant="87" id="1ci-09-gPx"/>
+                            <constraint firstItem="qgi-5T-NcH" firstAttribute="trailing" secondItem="sFb-xY-t4c" secondAttribute="trailing" constant="23" id="DUm-Dd-MDR"/>
+                            <constraint firstItem="sFb-xY-t4c" firstAttribute="top" secondItem="qgi-5T-NcH" secondAttribute="top" constant="184" id="ERK-Mk-W6m"/>
                             <constraint firstItem="qgi-5T-NcH" firstAttribute="bottom" secondItem="sFb-xY-t4c" secondAttribute="bottom" constant="248" id="Wzx-Rg-Kq4"/>
+                            <constraint firstItem="sFb-xY-t4c" firstAttribute="leading" secondItem="qgi-5T-NcH" secondAttribute="leading" constant="87" id="buP-tJ-mX3"/>
                             <constraint firstItem="qgi-5T-NcH" firstAttribute="trailing" secondItem="sFb-xY-t4c" secondAttribute="trailing" constant="87" id="h6M-aN-TAP"/>
                             <constraint firstItem="sFb-xY-t4c" firstAttribute="top" secondItem="qgi-5T-NcH" secondAttribute="top" constant="228" id="n5R-br-bei"/>
                             <constraint firstItem="sFb-xY-t4c" firstAttribute="centerY" secondItem="qgi-5T-NcH" secondAttribute="centerY" id="pc1-cc-Obi"/>
                             <constraint firstItem="sFb-xY-t4c" firstAttribute="centerX" secondItem="qgi-5T-NcH" secondAttribute="centerX" id="pmk-Wc-hB9"/>
+                            <constraint firstItem="qgi-5T-NcH" firstAttribute="bottom" secondItem="sFb-xY-t4c" secondAttribute="bottom" constant="52" id="va1-Sz-Ujz"/>
                             <constraint firstItem="sFb-xY-t4c" firstAttribute="width" secondItem="wDc-my-Iuc" secondAttribute="height" multiplier="15:46" id="yF0-D7-TYB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qgi-5T-NcH"/>

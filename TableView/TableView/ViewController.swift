@@ -41,7 +41,7 @@ class ViewController: UIViewController, UITableViewDataSource , UITableViewDeleg
         return header[section]
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let manhinhdich:View2Controller = storyboard?.instantiateViewController(withIdentifier: "MH2") as! View2Controller
+        let manhinhdich:View2Controller = storyboard?.instantiateViewController(withIdentifier: "mh2") as! View2Controller
         manhinhdich.name = arrImg[indexPath.section][indexPath.row]
         
         self.navigationController?.pushViewController(manhinhdich, animated: true)
