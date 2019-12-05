@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TEr-wI-Ibo">
+                                <rect key="frame" x="107" y="278" width="200" height="200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dwc-5a-msX">
+                                        <rect key="frame" x="8" y="0.0" width="200" height="200"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9nO-XQ-9eJ">
+                                                <rect key="frame" x="-76" y="-20" width="200" height="200"/>
+                                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="449-g4-JVA"/>
+                                                    <constraint firstAttribute="height" constant="200" id="Y05-Qm-SxJ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="Bwb-Y4-sr6"/>
+                                            <constraint firstItem="9nO-XQ-9eJ" firstAttribute="leading" secondItem="Dwc-5a-msX" secondAttribute="leading" constant="-15" id="HSU-Y9-MOa"/>
+                                            <constraint firstAttribute="bottom" secondItem="9nO-XQ-9eJ" secondAttribute="bottom" constant="22" id="TlA-AK-Ys9"/>
+                                            <constraint firstItem="9nO-XQ-9eJ" firstAttribute="top" secondItem="Dwc-5a-msX" secondAttribute="top" constant="-22" id="VZn-Vc-b2Q"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Dwc-5a-msX" firstAttribute="top" secondItem="TEr-wI-Ibo" secondAttribute="top" id="Emi-Wo-2ql"/>
+                                    <constraint firstAttribute="height" constant="200" id="S2j-rR-mkN"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dwc-5a-msX" secondAttribute="bottom" id="bbk-id-yDR"/>
+                                    <constraint firstAttribute="width" constant="200" id="oSp-DH-Ekg"/>
+                                    <constraint firstItem="Dwc-5a-msX" firstAttribute="leading" secondItem="TEr-wI-Ibo" secondAttribute="leading" id="wwR-sW-tNo"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dwc-5a-msX" secondAttribute="trailing" id="ylb-BP-W5s"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TEr-wI-Ibo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vTd-g9-u97"/>
+                            <constraint firstItem="TEr-wI-Ibo" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="xeN-Oj-Raf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78.260869565217391" y="125.54347826086958"/>
+        </scene>
+    </scenes>
+</document>
